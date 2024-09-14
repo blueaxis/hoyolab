@@ -230,9 +230,9 @@ async def update_characters_any(
             return
 
     if len(langs) == 1:
-        updators = [update_characters_ambr, update_characters_enka]
+        updators = [update_characters_enka]
     else:
-        updators = [update_characters_enka, update_characters_ambr]
+        updators = [update_characters_enka]
 
     updators.append(update_characters_genshindata)
 
